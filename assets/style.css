@@ -251,3 +251,19 @@ section { padding: 72px 0; border-top: 1px solid var(--hairline); }
 @media (max-width: 420px) {
   .site-nav a.optional { display: none; }
 }
+
+/* Sound credits table: scrolls sideways inside its box on narrow phones. */
+
+.table-wrap { overflow-x: auto; margin-top: 28px; border: 1px solid var(--hairline); border-radius: 18px; }
+
+.credits { width: 100%; border-collapse: collapse; font-size: 15px; }
+
+.credits th, .credits td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+
+.credits th { color: var(--text); font-weight: 600; background: var(--surface); white-space: nowrap; }
+
+.credits td { color: var(--muted); }
+
+.credits td:first-child { color: var(--text); white-space: nowrap; }
+
+.credits tr:last-child td { border-bottom: 0; }
